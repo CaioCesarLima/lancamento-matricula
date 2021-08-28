@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       initialBinding: HomeBinding(),
       getPages: AppPages.pages,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.brown,
       ),
       home: HomePage(),
     );

@@ -16,6 +16,7 @@ class HomePage extends GetView<HomeController> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           centerTitle: true,
+          title: Text('Voltando para casa'),
           
           elevation: 0,
         ),
@@ -34,11 +35,16 @@ class HomePage extends GetView<HomeController> {
               itemCount: _.participantes.length,
               itemBuilder: (context, index){
                 Participante participante = _.participantes[index];
-                return ListTile(
+                return Column(
+                  children: [
+                    ListTile(
                  title: Text(participante.nome, style: TextStyle(
                    color: Colors.white,
                    fontSize: 24
                  ),),
+                ),
+                Divider(color: Colors.white,)
+                  ],
                 );
               }),
           )

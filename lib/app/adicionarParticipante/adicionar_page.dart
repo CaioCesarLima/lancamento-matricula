@@ -16,6 +16,7 @@ class AdicionarPage extends GetView<AdicionarController> {
             appBar: AppBar(
               backgroundColor: Colors.transparent,
               centerTitle: true,
+              title: Text('Voltando para casa'),
               elevation: 0,
             ),
             drawer: Drawer(

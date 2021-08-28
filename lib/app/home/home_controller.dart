@@ -13,6 +13,8 @@ HomeController();
   }
 
   getParticipantes()async {
+    participantes = [];
+    update();
     participantes = await respository.getParticipantes();
     update();
   }
