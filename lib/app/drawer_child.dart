@@ -13,7 +13,7 @@ class DrawerChild extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: (){
-              Get.toNamed(Routes.CADASTRO);
+              Get.offAndToNamed(Routes.CADASTRO);
             },
             child: ListTile(
               title: Text('Adicionar Participante'),
@@ -21,7 +21,7 @@ class DrawerChild extends StatelessWidget {
           ),
           GestureDetector(
             onTap: (){
-              Get.toNamed(Routes.PARTICIPANTES);
+              Get.offAndToNamed(Routes.PARTICIPANTES);
             },
             child: ListTile(
               title: Text('Lista de Participantes'),
@@ -29,7 +29,7 @@ class DrawerChild extends StatelessWidget {
           ),
           GestureDetector(
             onTap: (){
-              Get.toNamed(Routes.SORTEIO);
+              Get.offAndToNamed(Routes.SORTEIO);
             },
             child: ListTile(
               title: Text('Sorteio'),
