@@ -11,9 +11,9 @@ void main() async {
 
 
   await Parse().initialize(
-        'Oa7mRdrAROxyxmVhOnQwlOBZlrv0mWvAj9HyAYGC',
+        '2r6CT0J75mkQCl441bcrTfH1zbBx3mKoDGQwZu0N',
         'https://parseapi.back4app.com/',
-        clientKey: 'W3o9hIHPSfG8N6ALtt7SkKlUSZ5mPeD8zAZJGQFU'
+        clientKey: 'e23ckagl04q2smmmqaXUHqgpQS9spBwKAxLFX1S2'
         );
         
   runApp(MyApp());
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       initialBinding: HomeBinding(),
       getPages: AppPages.pages,
       theme: ThemeData(
-        primarySwatch: Colors.brown,
+        primarySwatch: Colors.blue,
       ),
       home: HomePage(),
     );

@@ -12,11 +12,11 @@ class AdicionarPage extends GetView<AdicionarController> {
       initState: (_) {},
       builder: (_) {
         return Scaffold(
-            backgroundColor: Colors.brown[300],
+            backgroundColor: Colors.blueGrey,
             appBar: AppBar(
               backgroundColor: Colors.transparent,
               centerTitle: true,
-              title: Text('Voltando para casa'),
+              title: Text('Dia mundial do Jovem Adventista'),
               elevation: 0,
             ),
             drawer: Drawer(
@@ -59,12 +59,13 @@ class AdicionarPage extends GetView<AdicionarController> {
                         _.cadastrar();
                       },
                       child: Container(
-                        color: Colors.brown,
-                        padding: EdgeInsets.all(10),
-                        child: Text(
-                          'Adicionar',
-                          style: TextStyle(color: Colors.white),
-                        ),
+                          
+                          color: Colors.white,
+                          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                          child: Text(
+                            'Adicionar',
+                            style: TextStyle(color: Colors.black),
+                          ),
                       )),
                 ],
               ),

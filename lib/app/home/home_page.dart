@@ -12,11 +12,11 @@ class HomePage extends GetView<HomeController> {
       initState: (_) {},
       builder: (_) {
         return Scaffold(
-      backgroundColor: Colors.brown[300],
+      backgroundColor: Colors.blueGrey,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           centerTitle: true,
-          title: Text('Voltando para casa'),
+          title: Text('Dia Mundial do Jovem Adventista'),
           
           elevation: 0,
         ),

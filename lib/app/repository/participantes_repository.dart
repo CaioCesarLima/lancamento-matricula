@@ -13,6 +13,7 @@ class ParticipantesRespository{
 
   Future<List<Participante>> getParticipantes() async{
     ParseResponse response = await ParseObject('Participantes').getAll();
+    
     if(response.success){
       return response.results.map((e) => Participante(e['nome'])).toList();
     }
